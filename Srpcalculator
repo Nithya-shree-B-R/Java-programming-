@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class demoSRPCalclualator {
+public static void main (String [] args) {
+double result = 0;
+readInputValues input = new readInputValues () ;
+switoh (input.operation) {
+case +:
+result = Addition. sum (input) ;break;
+Case-:
+result = Substraction.difference (input) ;break;
+case *:
+result = Multiplication. product (input) ;break;
+case /:
+result = Division. quotient (input) ;break;
+case 8':
+result = Modulus. remainder (input) ;break;
+default:
+System. out.println ("Enter valid choice... ") ;break;}
+if (result>0) System.out.println ("The result is... "+result) ;
+}
+}
+class readInputValues {
+  double numl, num2 ;
+  char operation;
+  readInputValues (){
+       Scanner sc= new Scanner (System. in) ;
+       System.out.println("Enter any non zero number... ");
+       numl = sc.nextDouble ();
+       System.out.println ("Enter any non integer number...");
+       num2 = sc.nextDouble ();
+      System. out.println ("Enter your choice...");
+      operation = SC.next () .charAt (0) ;
+      sc.close () ;
+}
+}
+class Addition{
+  public static double sum (readInputValues ip) {
+return (ip. numl + ip.num2);
+}
+}
+class Substraction{
+   public static double difference (readInputValues ip) {
+   return (ip. numl - ip.num2) ;
+}
+}
+class Multiplication{
+  public static double product (readInputValues ip) {
+  return (ip.numl * ip.num2) ;
+}
+}
+class Division{
+   public static double quotient (readInputValues ip) {
+   return (ip.numl / ip. num2) ;
+}
+}
+class Modulus{
+public static double remainder (readInputValues ip) {
+return (ip.numl % ip.num2) ;
+}
+}
