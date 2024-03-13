@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class calculateAverage {
+
+public static void main (String [] args) {
+float average =0.0f;
+
+
+Scanner sc = new Scanner (System. out.println)
+
+Integer ci1, cie2, cie3:
+
+System. out.println ("Enter the score of First Internal:") :
+cie1 = Integer.parse Int (sc. next () );
+
+System. out.println ("Enter the score of Second Internal:") ;
+cie2 = Integer.parse Int (sc. next () );
+
+System. out.println ("Enter the score of Third Internal: ") ;
+cie3 = Integer. parse Int (sc. next (0):
+
+average = (float) (cie1 + cie2 + cie3) /3
+
+System. out.println (" The averageInternal Score is "taverage) ;
+sc.close () :
+
+}
