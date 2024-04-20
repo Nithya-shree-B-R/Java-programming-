@@ -1,0 +1,64 @@
+public class Student {
+    // Attributes
+    private String name;
+    private int id;
+    private double GPA;
+    
+    // Constructor
+    public Student(String name, int id, double GPA) {
+        this.name = name;
+        this.id = id;
+        this.GPA = GPA;
+    }
+    
+    // Method to display student info
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + id);
+        System.out.println("GPA: " + GPA);
+    }
+    
+    // Getter and setter methods for attributes
+    public String getName() {
+        return name;
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    public double getGPA() {
+        return GPA;
+    }
+    
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+    
+    // Main method to demonstrate usage
+    public static void main(String[] args) {
+        // Create an instance of the Student class
+        Student student1 = new Student("Nithyashree", 12345, 3.5);
+        
+        // Display initial student info
+        System.out.println("Initial student info:");
+        student1.displayInfo();
+        
+        // Modify student attributes
+        student1.setName("teju");
+        student1.setId(54321);
+        student1.setGPA(3.8);
+        
+        // Display modified student info
+        System.out.println("\nModified student info:");
+        student1.displayInfo();
+    }
+}
